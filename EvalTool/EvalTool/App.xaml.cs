@@ -13,7 +13,7 @@ namespace EvalTool
 		{
 			InitializeComponent();
 
-			MainPage = new EvalTool.MainPage();
+			MainPage = new NavigationPage(new NewContentPage());
 		}
 
 		protected override void OnStart ()
