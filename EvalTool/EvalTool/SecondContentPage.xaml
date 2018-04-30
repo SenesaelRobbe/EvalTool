@@ -4,23 +4,26 @@
              x:Class="EvalTool.SecondContentPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to the second page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to the second page!" />
     
             <Label x:Name="Uname" Text="{Binding Username}"></Label>
-            <Label x:Name="Tname" Text="{Binding Teamname}"></Label>
+            <Label x:Name="Teamname" Text="{Binding Teamname}"></Label>
 
-            
-            <Slider x:Name="UserExp" Maximum="6" Minimum="1" ValueChanged="ChangeText"></Slider>
-            <Slider x:Name="Implement" Maximum="6" Minimum="1" ValueChanged="ChangeText"></Slider>
-            <Slider x:Name="Research" Maximum="6" Minimum="1" ValueChanged="ChangeText"></Slider>
-            <Slider x:Name="Presentation" Maximum="6" Minimum="1" ValueChanged="ChangeText"></Slider>
-            <Slider x:Name="Overall" Maximum="6" Minimum="1" ValueChanged="ChangeText"></Slider>
+            <Label Text="User Experience: "></Label>
+            <Label x:Name="uexp"></Label>
+            <Slider  Maximum="6" Minimum="1" Value="1" x:Name="UserExp"  ValueChanged="ChangeText"></Slider>
+            <Label Text="Implementation: "></Label>
+            <Slider x:Name="Implement" Maximum="6" Minimum="1"></Slider>
+            <Label Text="Research: "></Label>
+            <Slider x:Name="Research" Maximum="6" Minimum="1"></Slider>
+            <Label Text="Presentation: "></Label>
+            <Slider x:Name="Presentation" Maximum="6" Minimum="1"></Slider>
+            <Label Text="Overall"></Label>
+            <Slider x:Name="Overall" Maximum="6" Minimum="1"></Slider>
 
             <Label Text="Remarks you possibly have : "></Label>
             <Editor x:Name="Remarks" ></Editor>
-            <Button Clicked="StoreAll"></Button>
+            <Button Clicked="StoreAndPost"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

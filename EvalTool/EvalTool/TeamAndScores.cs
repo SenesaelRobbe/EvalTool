@@ -6,7 +6,7 @@ namespace EvalTool
 {
     class TeamAndScores
     {
-        public string Teamname { get; set; }
+        public string GroupName { get; set; }
         public string Username { get; set; }
         public double UserExp { get; set; }
         public double Implement { get; set; }
