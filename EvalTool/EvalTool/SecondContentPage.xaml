@@ -10,16 +10,16 @@
             <Label x:Name="Teamname" Text="{Binding Teamname}"></Label>
 
             <Label Text="User Experience: "></Label>
-            <Label x:Name="uexp"></Label>
-            <Slider  Maximum="6" Minimum="1" Value="1" x:Name="UserExp"  ValueChanged="ChangeText"></Slider>
+            
+            <Slider  Maximum="6" Minimum="1" Value="1" x:Name="Score1"  ValueChanged="ChangeText"></Slider>
             <Label Text="Implementation: "></Label>
-            <Slider x:Name="Implement" Maximum="6" Minimum="1"></Slider>
+            <Slider x:Name="Score2" Maximum="6" Minimum="1"></Slider>
             <Label Text="Research: "></Label>
-            <Slider x:Name="Research" Maximum="6" Minimum="1"></Slider>
+            <Slider x:Name="Score3" Maximum="6" Minimum="1"></Slider>
             <Label Text="Presentation: "></Label>
-            <Slider x:Name="Presentation" Maximum="6" Minimum="1"></Slider>
+            <Slider x:Name="Score4" Maximum="6" Minimum="1"></Slider>
             <Label Text="Overall"></Label>
-            <Slider x:Name="Overall" Maximum="6" Minimum="1"></Slider>
+            <Slider x:Name="Score5" Maximum="6" Minimum="1"></Slider>
 
             <Label Text="Remarks you possibly have : "></Label>
             <Editor x:Name="Remarks" ></Editor>

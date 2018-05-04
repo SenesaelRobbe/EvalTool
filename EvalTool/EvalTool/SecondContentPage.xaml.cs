@@ -31,11 +31,11 @@ namespace EvalTool
             {
                 Username = Uname.Text,
                 GroupName = Teamname.Text,
-                UserExp = UserExp.Value,
-                Implement = Implement.Value,
-                Research = Research.Value,
-                Presentation = Presentation.Value,
-                Overall = Overall.Value,
+                Score1  =(int) Score1.Value,
+                Score2 = (int) Score2.Value,
+                Score3 = (int) Score3.Value,
+                Score4 = (int) Score4.Value,
+                Score5 = (int) Score5.Value,
                 Remarks = Remarks.Text
             });
             var Content = new StringContent(Json, Encoding.UTF8, "application/json");
