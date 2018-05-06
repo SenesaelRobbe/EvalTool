@@ -9,17 +9,20 @@
             <Label x:Name="Uname" Text="{Binding Username}"></Label>
             <Label x:Name="Teamname" Text="{Binding Teamname}"></Label>
 
-            <Label Text="User Experience: "></Label>
-            
-            <Slider  Maximum="6" Minimum="1" Value="1" x:Name="Score1"  ValueChanged="ChangeText"></Slider>
-            <Label Text="Implementation: "></Label>
-            <Slider x:Name="Score2" Maximum="6" Minimum="1"></Slider>
-            <Label Text="Research: "></Label>
-            <Slider x:Name="Score3" Maximum="6" Minimum="1"></Slider>
-            <Label Text="Presentation: "></Label>
-            <Slider x:Name="Score4" Maximum="6" Minimum="1"></Slider>
-            <Label Text="Overall"></Label>
-            <Slider x:Name="Score5" Maximum="6" Minimum="1"></Slider>
+            <Label x:Name="Score1val" Text="User Experience: "></Label>
+            <Slider  Maximum="6" Minimum="1" Value="1" x:Name="Score1"  ValueChanged="ChangeScore1"></Slider>
+
+            <Label x:Name="Score2val" Text="Implementation: "></Label>
+            <Slider x:Name="Score2" Maximum="6" Minimum="1" ValueChanged="ChangeScore2"></Slider>
+
+            <Label x:Name="Score3val" Text="Research: "></Label>
+            <Slider x:Name="Score3" Maximum="6" Minimum="1" ValueChanged="ChangeScore3"></Slider>
+
+            <Label x:Name="Score4val" Text="Presentation: "></Label>
+            <Slider x:Name="Score4" Maximum="6" Minimum="1" ValueChanged="ChangeScore4"></Slider>
+
+            <Label x:Name="Score5val" Text="Overall: "></Label>
+            <Slider x:Name="Score5" Maximum="6" Minimum="1" ValueChanged="ChangeScore5"></Slider>
 
             <Label Text="Remarks you possibly have : "></Label>
             <Editor x:Name="Remarks" ></Editor>

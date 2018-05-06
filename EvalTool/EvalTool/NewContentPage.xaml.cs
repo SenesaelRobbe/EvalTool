@@ -20,16 +20,25 @@ namespace EvalTool
 
         async public void SwitchPage()
         {
+            var uname = UsernameEntry.Text;
+            var tname = TeamnameEntry.Text;
+
             var Teaminfo = new Teaminfo
             {
                 Username = UsernameEntry.Text,
                 Teamname = TeamnameEntry.Text
             };
 
-            var nextPage = new SecondContentPage();
-            nextPage.BindingContext = Teaminfo;
+            if ((uname == null || tname == null))
+            {
+               await DisplayAlert("Fault!", "Your username or the groupname seems to be empty!", "Ok!");
+            } else
+            {
+                var nextPage = new SecondContentPage();
+                nextPage.BindingContext = Teaminfo;
 
-            await Navigation.PushAsync(nextPage);
+                await Navigation.PushAsync(nextPage);
+            }
         }
 
         //THESE WERE TESTS
